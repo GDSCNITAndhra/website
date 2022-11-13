@@ -1,0 +1,97 @@
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 10px;
+}
+
+.logoContainer img {
+    width: 70px;
+    padding: 20px
+}
+
+.navLinksContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 50px;
+    font-size: larger;
+    align-items: center;
+    color: #757575
+}
+
+.navLink:hover {
+    color: #4182EF;
+    cursor: pointer;
+}
+
+.memberButton {
+    font-size: 1rem;
+    border: none;
+    margin-left: 20px;
+    background-color: #4182EF;
+    border-radius: 40px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.memberButton:hover {
+    box-shadow: 0 0 10px #4182EF;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (min-width:200px) and (max-width: 1200px) {
+    .drop {
+        display: none;
+    }
+    
+    .hamburger {
+        display: inline-block;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .navContainer {
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+    }
+    
+    .navLinksContainer {
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        gap: 0;
+    }
+
+    .navLink {
+        margin-bottom: 20px;
+    }
+
+    .memberButton {
+        margin-bottom: 10px;
+    }
+       
+}
+
+.blockDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredDisplay {
+    display: flex;
+    flex-direction: column;
+}

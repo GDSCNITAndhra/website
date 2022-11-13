@@ -1,0 +1,115 @@
+
+.gdsc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gdsc .infoContainer header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #757575
+}
+
+
+.gdsc .memberButton {
+    font-size: 1rem;
+    border: none;
+    margin-left: 20px;
+    background-color: #4182EF;
+    border-radius: 40px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.gdsc .imageContainer img {
+    max-width: 550px;
+}
+
+.memberButton:hover {
+    box-shadow: 0 0 10px #4182EF;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.about .infoContainer header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #757575
+}
+
+.about .imageContainer img {
+    max-width: 550px;
+}
+
+.aboutUsLink {
+    color: #4182EF;
+    position: absolute;
+    right: 10%;
+}
+
+.aboutUsLink:hover {
+    text-decoration: underline;
+}
+
+.eventsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+.eventsWrapper header {
+    font-size: 36px;
+}
+
+.pastEventsButton {
+    font-size: larger;
+    color: #444444;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #444444;
+    border-radius: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.pastEventsButton:hover {
+    background-color: #4182EF;
+    color: white
+}
+
+.eventsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 799px) {
+    .gdsc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

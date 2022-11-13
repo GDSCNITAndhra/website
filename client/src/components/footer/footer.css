@@ -1,0 +1,77 @@
+.para {
+    margin: 0;
+    padding: 10px;
+}
+
+.footerWrapper {
+    background-color: #404040;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-footer{
+    width: 100px;
+}
+
+.connectWithUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connectWithUs .linkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.connectWithUs .linkContainer .link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logoContainer h2 {
+    font-size: 30px;
+}
+
+.logoContainer p {
+    padding: 0;
+}
+
+
+@media only screen and (min-width:200px) and (max-width: 799px) { 
+    .footerWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .connectWithUs .linkContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+    }
+
+    .connectWithUs .linkContainer .link {
+        margin-left: 50px;
+    }
+}
