@@ -6,6 +6,7 @@ import {
     Route,
     Navigate
 } from "react-router-dom";
+import WinterSchool from "./pages/winterSchool/WinterSchool";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/winterSchool" element={<WinterSchool />} />
 				</Routes>
 			</Router>
 		</>

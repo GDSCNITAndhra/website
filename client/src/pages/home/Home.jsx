@@ -6,6 +6,7 @@ import landing from "../../images/landing.png"
 import about from "../../images/about.png"
 import Event from "../../components/event/Event"
 import { Link } from "react-router-dom"
+import wint_scl_logo from "../../images/Winter School Logo.png"
 
 export default function Home() {
     return (
@@ -18,7 +19,7 @@ export default function Home() {
                         <p style={{fontSize: "24px", marginTop: "10px"}}>NIT Andhra Pradesh</p>
                         <p style={{maxWidth: "70%", lineHeight: "2", color: "#757575"}}>A community of developers, designers and tech nerds who desire to learn, educate and grow. At GDSC NIT AP, we provide a platform for individuals to learn, develop, collaborate, exchange ideas
                         and grow together</p>
-                        <button className="memberButton">Become a member</button>
+                        <button onClick={() => {alert("Coming soon")}} className="memberButton">Become a member</button>
                     </div>
                     <div className="imageContainer">
                         <img src={landing}></img>
@@ -45,10 +46,10 @@ export default function Home() {
                 <div className="eventsWrapper">
                     <header>Our Upcoming Events</header>
                     <div className="eventsContainer">
-                        <Event eventName={"Winter School"} eventAbout={"This is the first ever winter school by any gdsc ever. In this winter school, you will be able to participate in a series of courses and pick up certifications for web development, git and github and DSA."} eventImage={about} />
-                        <Event eventName={"Winter School"} eventAbout={"This is the first ever winter school by any gdsc ever. In this winter school, you will be able to participate in a series of courses and pick up certifications for web development, git and github and DSA."} eventImage={about} />
+                        <Event link={"/winterSchool"} eventName={"Winter School"} eventAbout={"This is the first winter school by any gdsc ever. In this winter school, you will be able to participate in a series of courses and pick up official certifications for web development, git and github and DSA."} eventImage={wint_scl_logo} />
+                        {/* <Event eventName={"Winter School"} eventAbout={"This is the first ever winter school by any gdsc ever. In this winter school, you will be able to participate in a series of courses and pick up certifications for web development, git and github and DSA."} eventImage={about} /> */}
                     </div>
-                    <button className="pastEventsButton">Past Events</button>
+                    <button onClick={() => {alert("Coming soon")}} className="pastEventsButton">Past Events</button>
                 </div>
             </div>
             <Footer />

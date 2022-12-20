@@ -29,9 +29,11 @@ function Navbar() {
                     <Link to="/about" style={{textDecoration: "none", color: "#757575"}}>
                         <div className={active == 0 ? 'navLink drop' : "navLink"}>About</div>
                     </Link>
-                    <div className={active == 0 ? 'navLink drop' : "navLink"}>Events</div>
-                    <div className={active == 0 ? 'navLink drop' : "navLink"}>Contact Us</div>
-                    <button className={active == 0 ? 'memberButton drop' : "memberButton"}>Become a member</button>
+                    <Link to="/winterSchool" style={{textDecoration: "none", color: "#757575"}}>
+                        <div className={active == 0 ? 'navLink drop' : "navLink"}>Events</div>
+                    </Link>
+                    <div onClick={() => {alert("Coming soon")}} className={active == 0 ? 'navLink drop' : "navLink"}>Contact Us</div>
+                    <button onClick={() => {alert("Coming soon")}} className={active == 0 ? 'memberButton drop' : "memberButton"}>Become a member</button>
                 </div>
             </div>
         </>

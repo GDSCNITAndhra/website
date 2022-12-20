@@ -14,7 +14,7 @@ export default function Member(props) {
                 <img src={props.memberImage}></img>
                 <p className="memberName">{props.memberName}</p>
                 <p className="memberPosition">
-                    {props.memberPosition}
+                    {props.memberPosition ? props.memberPosition : ""}
                 </p>
                 <div className="linksContainer">
                     <iconify-icon onMouseOver={() => {setInstaHover(1)}} onMouseOut={() => {setInstaHover(0)}} style={instaHover == 1 ? {color: "#E1306C", fontSize: "24px", cursor: "pointer"} : {fontSize: "24px", cursor: "pointer"}} icon="akar-icons:instagram-fill"></iconify-icon>

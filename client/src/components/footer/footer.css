@@ -48,7 +48,7 @@
 }
 
 
-@media only screen and (min-width:200px) and (max-width: 799px) { 
+@media only screen and (min-width: 100px) and (max-width: 799px) { 
     .footerWrapper {
         display: flex;
         flex-wrap: wrap;
@@ -72,6 +72,6 @@
     }
 
     .connectWithUs .linkContainer .link {
-        margin-left: 50px;
+        margin-left: 20px;
     }
 }
