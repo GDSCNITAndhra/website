@@ -5,6 +5,7 @@ import logo from "../../images/logo.png"
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { Link } from "react-router-dom"
+import axios from "axios"
 
 function Navbar() {
 
@@ -12,6 +13,10 @@ function Navbar() {
     
     const clicked = () => {
         setActive(!active)
+    }
+
+    const handleHi = async () => {
+        await axios.post("/api/hi");
     }
 
     return (
@@ -33,7 +38,7 @@ function Navbar() {
                         <div className={active == 0 ? 'navLink drop' : "navLink"}>Events</div>
                     </Link>
                     <div onClick={() => {alert("Coming soon")}} className={active == 0 ? 'navLink drop' : "navLink"}>Contact Us</div>
-                    <button onClick={() => {alert("Coming soon")}} className={active == 0 ? 'memberButton drop' : "memberButton"}>Become a member</button>
+                    <button onClick={() => {handleHi(); alert("Coming soon")}} className={active == 0 ? 'memberButton drop' : "memberButton"}>Become a member</button>
                 </div>
             </div>
         </>
